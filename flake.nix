@@ -14,7 +14,7 @@
       let
         pkgs = import nixpkgs {
           inherit system;
-          overlays = [ (import ./ceserver.nix) ];
+          overlays = [ (import ./.) ];
           config = {
             allowUnfree = true;
           };
