@@ -14,14 +14,13 @@
       let
         pkgs = import nixpkgs {
           inherit system;
-          overlays = [ (import ./.) ];
           config = {
             allowUnfree = true;
           };
         };
       in
       {
-        packages.default = pkgs.ceserver;
+        packages.default = pkgs.callPackage ./. {};
       }
     )) // {
       flakePackage = (pkgs: pkgs.callPackage ./. {});
