@@ -14,8 +14,8 @@
       src = fetchFromGitHub {
         owner = "cheat-engine";
         repo = "cheat-engine";
-        rev = "59930b596dabbd83e37191e4a58e72f09a9beb75";
-        hash = "sha256-J2WyNB5MUqcTUc7JjUIq/EBrBHFqxT3LeaUumWorg/4=";
+        rev = "e137317cbe9692c4dc61e6d2e89bf543b4d7301f";
+        hash = "sha256-kEpt4cspC5BR+03022cPnOpNLxAUbUpdEM+K9wcv1Mo=";
       };
       buildInputs = [
         glibc
