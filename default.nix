@@ -5,6 +5,8 @@
   fetchFromGitHub,
   lib,
   gnumake,
+  # Int conversion error in gcc 14
+  gcc13
 }:
 stdenv.mkDerivation rec {
   pname = "ceserver";
@@ -22,6 +24,7 @@ stdenv.mkDerivation rec {
   ];
   nativeBuildInputs = [
     gnumake
+    gcc13
   ];
   buildPhase = ''
     runHook preBuild
